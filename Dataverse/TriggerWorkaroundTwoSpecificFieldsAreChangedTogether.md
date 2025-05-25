@@ -26,8 +26,11 @@ Option B: Use Audit Logs (Complex)
 If auditing is enabled in Dataverse, you could extract historical values — but this is not straightforward in Power Automate directly.
 ✔ Best Simple Workaround: Store Previous Values in Shadow Fields
 Create two shadow fields, e.g., prevFieldA and prevFieldB, and update them at the end of each flow run.
+
 Then:
+
 ________________________________________
+
 3. Condition: Compare Old and New Values
 Add a condition block like this:
 (fieldA != prevFieldA) AND (fieldB != prevFieldB)
@@ -36,13 +39,19 @@ and(
   not(equals(triggerOutputs()?['body/fieldA'], triggerOutputs()?['body/prevFieldA'])),
   not(equals(triggerOutputs()?['body/fieldB'], triggerOutputs()?['body/prevFieldB']))
 )
+
 This ensures the flow proceeds only if both values changed.
 ________________________________________
+
 4. Do Your Logic
+
 Only execute your desired logic (e.g., send email, update status, etc.) within the If true branch of the condition above.
 ________________________________________
+
 5. Update the Shadow Fields
+   
 Update prevFieldA and prevFieldB with the new values of fieldA and fieldB respectively, so next time you'll have the old values for comparison.
+
 ________________________________________
 ✅ Benefits of This Method
 •	Works within Power Automate’s limitations.
