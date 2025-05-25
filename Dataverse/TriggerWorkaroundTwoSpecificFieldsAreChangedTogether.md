@@ -23,7 +23,7 @@ Option A: Use a "Get row" action
 •	But this gives the current version again — so you may need versioning logic.
 
 Option B: Use Audit Logs (Complex)
-If auditing is enabled in Dataverse, you could extract historical values — but this is not straightforward in Power Automate directly.
+If auditing is enabled in Dataverse, you could extract historical values — but this is not straightforward for Power Automate.
 ✔ Best Simple Workaround: Store Previous Values in Shadow Fields
 Create two shadow fields, e.g., prevFieldA and prevFieldB, and update them at the end of each flow run.
 
