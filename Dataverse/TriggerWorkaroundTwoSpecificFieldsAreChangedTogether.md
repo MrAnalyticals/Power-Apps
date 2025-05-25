@@ -17,9 +17,11 @@ ________________________________________
 ________________________________________
 2. Get the Previous Version of the Record
 Since the trigger gives you only the new values, you’ll need the previous values to compare what actually changed.
+
 Option A: Use a "Get row" action
 •	Use a Get row by ID, referencing the same row (using Row ID from the trigger).
 •	But this gives the current version again — so you may need versioning logic.
+
 Option B: Use Audit Logs (Complex)
 If auditing is enabled in Dataverse, you could extract historical values — but this is not straightforward in Power Automate directly.
 ✔ Best Simple Workaround: Store Previous Values in Shadow Fields
