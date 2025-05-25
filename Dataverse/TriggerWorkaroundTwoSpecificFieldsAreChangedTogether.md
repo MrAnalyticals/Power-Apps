@@ -1,7 +1,7 @@
 
+**Workaround Dataverse Trigger for When Two Specific Fields Are Changed Together**
 
-Workaround Dataverse Trigger for When Two Specific Fields Are Changed Together
-You're absolutely right — the "When a row is modified" trigger in Power Automate (Dataverse) doesn't support directly filtering flows to run only when specific combinations of fields change (i.e., Field A AND Field B changed together). It triggers when any of the selected columns change (logical OR), not AND.
+"When a row is modified" trigger in Power Automate (Dataverse) doesn't support directly filtering flows to run only when specific combinations of fields change (i.e., Field A AND Field B changed together). It triggers when any of the selected columns change (logical OR), not AND.
 Here’s how to work around this limitation using conditional logic in your flow:
 ________________________________________
 ✅ Step-by-Step Workaround: Trigger When Two Specific Fields Are Changed Together
