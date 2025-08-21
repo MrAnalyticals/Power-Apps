@@ -1,4 +1,5 @@
-Creating a Service Principal  for Power Platform
+**Creating a Service Principal  for Power Platform**
+
 
 ✅ Setting up a Service Principal with Dataverse
 To set up a Service Principal so it appears in the "Authentication Type" for a Microsoft Dataverse action (like in your screenshot), follow these steps in Azure and Power Platform:
@@ -22,11 +23,21 @@ a)	Still in the app registration, go to API permissions → Add a permission.
 b)	Set up as following:
 •	Select the “Microsoft APIs” tab then the “Dynamics CRM” panel:
  
- 
+<img width="1037" height="625" alt="image" src="https://github.com/user-attachments/assets/31c505c3-e147-436d-ab17-2e508df3635c" />
+
+<img width="1037" height="625" alt="image" src="https://github.com/user-attachments/assets/f59eba34-2241-4d0b-9a20-1364d1a0132d" />
+
+
 It will display as follows:
+
+<img width="1040" height="598" alt="image" src="https://github.com/user-attachments/assets/bd01e0da-7537-44a0-b0dd-58442331727b" />
+
  
 •	Select “user_impersonation” option then the click the “Add permission” button.
- 
+
+<img width="1040" height="628" alt="image" src="https://github.com/user-attachments/assets/3029d3df-f114-439e-9007-728ac4a668d5" />
+
+
 c)	Grant admin consent.
 Alternatively, you can select the “APIs my organization uses”  search for “dataverse”  select it when it appears  select the user_impersonation option  click the “Add permission” button.
 
@@ -54,8 +65,13 @@ o	Environment URL (e.g., https://<org>.crm.dynamics.com)
 
 Screenshot: Create a new Connection
  
+<img width="1040" height="628" alt="image" src="https://github.com/user-attachments/assets/1c30c365-ee88-4fca-81c1-70429923f295" />
 
 Screenshot: Select Service Principal
+
+<img width="941" height="402" alt="image" src="https://github.com/user-attachments/assets/cbd81913-fc0b-4f92-a02c-741eb4ee72d8" />
+
+
  
 7. Test the Connection
 •	Save and run your flow to confirm it connects to Dataverse without requiring an interactive sign-in.
