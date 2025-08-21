@@ -3,6 +3,8 @@
 
 ✅ Setting up a Service Principal with Dataverse
 To set up a Service Principal so it appears in the "Authentication Type" for a Microsoft Dataverse action (like in your screenshot), follow these steps in Azure and Power Platform:
+See, also, YouTube demo video:
+
 ________________________________________
 1. Register an Application in Azure AD
 1.	Go to Azure Portal → Azure Active Directory → App registrations.
